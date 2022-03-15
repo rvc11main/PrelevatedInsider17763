@@ -5,7 +5,8 @@
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 ## Rules
- - **Don't use cracks.** There are serveral malicious programs, which can harmfully access your space/PC.
+ - **Don't use cracks.** There are serverally malicious programs, which can harmfully access your space/PC.
+ - **Upgrading takes several minutes.** Don't cancel the upgrade. It will rollback your software version.
 
 <!---
 SreeramSathya2014/SreeramSathya2014 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
