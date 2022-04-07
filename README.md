@@ -1,3 +1,4 @@
+!(Contains Microsoft content)[https://github.com/microsoft/.github/raw/main/images/open-at-microsoft.png]
 # My profile
 - 👋 Hi, I’m @SreeramSathya2014
 - 👀 I’m interested in ...
