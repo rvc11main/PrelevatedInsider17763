@@ -1,0 +1,231 @@
+<link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.5.0/css/metro.css">
+<link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.5.0/css/metro-colors.css">
+<link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.5.0/css/metro-rtl.css">
+<link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.5.0/css/metro-icons.css">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+        <link href="https://metroui.org.ua/css/metro-all.css?ver=@@b-version" rel="stylesheet">
+        <link href="https://metroui.org.ua/examples/desktop/descktop.css" rel="stylesheet">
+    
+        <style>
+            .window-area {
+                background: url("https://metroui.org.ua/images/anime-background-images-1.jpg") center center no-repeat;
+                background-size: cover;
+            }
+            #charm {
+                height: calc(100vh - 40px);
+                width: 396px;
+                background-color: #1F4F5D;
+            }
+            
+            .right {
+                right: -157%;
+                top: calc(-30% - -51px);
+            }
+
+            .left {
+                top: calc(-30% - -262px);
+            }
+
+            .start-menu {
+                width: calc(100vh - 270px);
+            }
+
+            .start-menu:not(.active)
+            {
+                display: none !important;
+            }
+            .start-menu.active
+            {
+                display: block !important;
+            }
+            [data-role=tile].window-area {
+                height: 150px !important;
+            }
+        </style>
+    <style></style></head>
+    <body class="" style="opacity: 1;">
+        <div data-role="charms" data-position="right" id="charm" class="p-4 charms right-side" data-role-charms="true" style="background-color: rgb(31, 79, 93);">
+            <div class="h-100 d-flex flex-column">
+                <div class="charm-top">
+                    <div class="text-center m-4">
+                        <span>Google Chrome</span>
+                    </div>
+    
+                    <div class="charm-notify">
+                        <img class="icon" src="../../images/me.jpg">
+                        <div class="title">About Author</div>
+                        <div class="content">The hornpipe fears with endurance, vandalize the galley until it waves.</div>
+                        <div class="secondary">14:17 • www.facebook.com</div>
+                    </div>
+                    <div class="charm-notify">
+                        <img class="icon" src="../../images/me.jpg">
+                        <div class="title">About Author</div>
+                        <div class="content">The hornpipe fears with endurance, vandalize the galley until it waves.</div>
+                        <div class="secondary">14:17 • www.facebook.com</div>
+                    </div>
+                    <div class="charm-notify">
+                        <img class="icon" src="../../images/me.jpg">
+                        <div class="title">About Author</div>
+                        <div class="content">The hornpipe fears with endurance, vandalize the galley until it waves.</div>
+                        <div class="secondary">14:17 • www.facebook.com</div>
+                    </div>
+    
+                    <div class="text-center m-4">
+                        <span>Information</span>
+                    </div>
+    
+                    <div class="charm-notify">
+                        <span class="icon mif-info"></span>
+                        <div class="title">You have a news</div>
+                        <div class="content">The hornpipe fears with endurance, vandalize the galley until it waves.</div>
+                    </div>
+    
+                    <div class="clear mt-4 reduce-1">
+                        <span class="place-left c-pointer">Collapse</span>
+                        <span class="place-right c-pointer">Clear notifies</span>
+                    </div>
+    
+                </div>
+    
+                <div class="charm-bottom mt-auto">
+                    <div class="d-flex">
+                        <div class="charm-tile">
+                            <span class="icon mif-tablet-landscape"></span>
+                            <span class="caption">Tablet mode</span>
+                        </div>
+                        <div class="charm-tile">
+                            <span class="icon mif-wifi-full"></span>
+                            <span class="caption">Network</span>
+                        </div>
+                        <div class="charm-tile">
+                            <span class="icon mif-cog"></span>
+                            <span class="caption">Preferences</span>
+                        </div>
+                        <div class="charm-tile active">
+                            <span class="icon mif-rocket"></span>
+                            <span class="caption">Fly mode</span>
+                        </div>
+                    </div>
+    
+                    <div class="d-flex">
+                        <div class="charm-tile active">
+                            <span class="icon mif-target"></span>
+                            <span class="caption">Position</span>
+                        </div>
+                        <div class="charm-tile">
+                            <span class="icon mif-bluetooth"></span>
+                            <span class="caption">Not connected</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="desktop">
+            <div class="window-area"></div>
+            <div class="task-bar">
+                <div class="task-bar-section">
+                    <button class="task-bar-item" id="start-menu-toggle" onclick="toggleStart()"><span class="mif-windows"></span></button>
+                    <div class="start-menu active" data-role="dropdown" data-toggle-element="#start-menu-toggle" data-role-dropdown="true" style="display: block;">
+                        <div class="start-menu-inner">
+                            <div class="explorer">
+                                <div class="left">
+                                    <ul class="v-menu w-100 bg-brandColor2 fg-white">
+                                        <li><a onclick="createWindowYoutube()">Youtube window</a></li>
+                                        <li><a onclick="createWindow()">New window</a></li>
+                                        <li><a onclick="createRibbonWindow()">New ribbon window</a></li>
+                                        <li><a onclick="createWindowWithCustomButtons()">Custom buttons</a></li>
+                                        <li><a onclick="createWindowModal()">Modal window</a></li>
+                                    </ul>
+                                </div>
+                                <div class="right">
+                                    <div class="tiles-grid tiles-group size-2">
+                                        <a href="https://github.com/olton/Metro-UI-CSS"
+                                                data-role="tile" class="bg-indigo">
+                                            <span class="mif-github icon"></span>
+                                            <span class="branding-bar">Github</span>
+                                            <span class="badge-bottom">30</span>
+                                        </a>
+                                        <div data-role="tile" class="bg-cyan">
+                                            <span class="mif-envelop icon"></span>
+                                            <span class="branding-bar">Email</span>
+                                            <span class="badge-bottom">10</span>
+                                        </div>
+                                        <div data-role="tile" class="bg-orange" data-size="wide">
+                                            <span class="mif-chrome icon"></span>
+                                            <span class="branding-bar">Chrome</span>
+                                        </div>
+                                        <div data-role="tile" data-size="small">
+                                            <span class="mif-apple icon"></span>
+                                        </div>
+                                        <div data-role="tile" data-size="small" class="bg-red">
+                                            <span class="mif-bell icon"></span>
+                                        </div>
+                                        <div data-role="tile" data-size="small" class="bg-cyan col-1 row-6">
+                                            <span class="mif-table icon"></span>
+                                        </div>
+                                        <div data-role="tile" data-size="small" class="bg-brown col-2 row-6">
+                                            <span class="mif-wind icon"></span>
+                                        </div>
+                                        <div data-role="tile" class="bg-teal">
+                                            <span class="mif-windows icon"></span>
+                                            <span class="branding-bar">Windows</span>
+                                        </div>
+                                        <div data-role="tile" class="window-area">
+                                            <span class="mif-weather icon"></span>
+                                            <span class="branding-bar">Weather</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="task-bar-section tasks"></div>
+                <div class="task-bar-section system-tray ml-auto">
+                    <button class="task-bar-item" id="open-charm" onclick="openCharm()"><span class="mif-comment"></span></button>
+                    <span style="line-height: 40px;" class="pr-4">
+                        <span data-role="clock" class="w-auto fg-white reduce-1" data-show-date="false" data-role-clock="true"><span class="clock-hour">20</span><span class="clock-divider">:</span><span class="clock-minute">24</span><span class="clock-divider">:</span><span class="clock-second">31</span><span class="clock-suffix"></span></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://cdn.metroui.org.ua/v4.5.0/js/metro.min.js"></script>
+        <script src="https://metroui.org.ua/examples/desktop/desktop.js"></script>
+        <script>
+            function toggleStart() {
+                document.getElementsByClassName("start-menu").classList.toggle("active");
+            }
+
+            function tiles()
+            {
+
+            }
+
+            function createRibbonWindow(){
+                var index = $.random(0, 3);
+                var w = Desktop.createWindow({
+                    resizeable: true,
+                    draggable: true,
+                    width: 300,
+                    icon: "<span class='mif-'+w_icons[index]+''></span>",
+                    title: w_titles[index],
+                    content: "<nav data-role='ribbonmenu'><ul class='tabs-holder'><li class='static'><a href='#'>Static</a></li><li><a href='#section-one'>One</a></li><li><a href='#section-two'>Two</a></li><li><a href='#section-three'>Three</a></li></ul><div class='content-holder'> <div class'section' id='section-one'><p class='p-4'>Section one</p></div><div class='section' id='section-two'><p class='p-4'>Section two</p></div><div class='section' id='section-three'><p class='p-4'>Section three</p></div></div></nav><div class='p-2'>This is desktop demo created with Metro 4 Components Library</div>"
+                });
+            }
+            try {
+                tiles()
+            }
+            catch(err) {
+                console.error("Error: " + err.message);
+            }
+
+            
+        </script>
+        <!-- ads-script -->
+    
+    </body>
