@@ -1,4 +1,4 @@
-![https://github.com/microsoft/.github/raw/main/images/open-at-microsoft.png](Contains Microsoft content)
+![open-at-microsoft.png](Contains Microsoft content)
 # My profile
 - 👋 Hi, I’m @SreeramSathya2014
 - 👀 I’m interested in ...
