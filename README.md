@@ -1,7 +1,7 @@
 
 # My profile
 * 👋 Hi, I’m @PrelevatedInsider22581
-* 👀 I’m interested in ASP.NET, .NET, React JS, HTML, CSS, JS and C#, WPF, Win32 API (C#), formally WinForms
+* 👀 I’m interested in ASP.NET, .NET, React JS, HTML, CSS, JS and C#, WPF, Win32 API (C#), before WPF; I'm interested in WinForms
 * 🌱 I’m currently learning TypeScript, C/C++, assembly, EFI code, or Win32 API
 * 💞️ I’m looking to collaborate on nobody
 * 📫 How to reach me:
